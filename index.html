@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(168, 164, 234);
+    }
+    #first{
+        margin: 200px 400px;
+        padding:20px 0px;
+        background-color: rgb(92, 86, 179);
+        color: white;
+    }
+    #fir,#sec,#thir,#four{
+        margin: 10px 100px;
+        border: 2px black solid;
+        /* padding: 10px ; */
+        width: 60%;
+        color: white;
+
+    }
+    button{
+      padding: 10px 15px;
+      font-size: larger;
+      color: black;
+      background-color: rgb(92, 63, 116);
+      
+    }
+</style>
+<body id="red">
+    <div id="first">
+    <h1 style="font-size: 30px; padding: 10px; margin-left:20px;">In Web design,What does CSS stands for?</h1>
+    <div id="fir">
+    <button onclick="change()" id="but1">A</button>
+    Counter Strike source
+    </div>
+    <div id="sec">
+     <button onclick="change1()" id="but2">B</button>
+     Corrective Style Sheet<br>
+    </div>
+    <div id="thir">
+     <button onclick="change2()" id="but3">C</button>
+     Computer Style Sheet<br>
+    </div>
+    <div id="four">
+     <button onclick="change3()" id="but4">D</button>
+     Cascading Style Sheet<br>
+    </div>
+</div> 
+</body>
+<script>
+    function change(){
+        document.getElementById("but1").style="background-color:red";
+        document.getElementById("fir").style="background-color:red;transition:0.5s";
+        document.getElementById("red").style="background-color:red;transition:0.5s";
+    }
+    function change1(){
+        document.getElementById("but2").style="background-color:red";
+        document.getElementById("sec").style="background-color:red ;transition:0.5s";
+        document.getElementById("red").style="background-color:red ;transition:0.5s";
+    }
+    function change2(){
+        document.getElementById("but3").style="background-color:red";
+        document.getElementById("thir").style="background-color:red ;transition:0.5s";
+        document.getElementById("red").style="background-color:red ;transition:0.5s";
+    }
+    function change3(){
+        document.getElementById("but4").style="background-color:green";
+        document.getElementById("four").style="background-color:green ;transition:0.5s";
+        document.getElementById("red").style="background-color:green ;transition:0.5s";
+    }
+    
+</script>
+</html>
